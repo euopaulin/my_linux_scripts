@@ -1,19 +1,19 @@
-# my_linux_scripts
+# Meu script para perifericos no Linux 🖱️
 
-Repositório com scripts utilitários para configuração rápida em sistemas Linux (foco em configuração de monitores e mouse).
+Repositório com scripts utilitários para configuração rápida do meu mouse Attack Shark X11 e monitores para uso em Linux.
 
 ## Estrutura do repositório
 
 - `MonitoresConfig/`
-	- `monitoresconfig.bash` — script para aplicar configurações de monitores (resolução, disposição, múltiplos monitores, etc.).
-	- `monitorinicializacao.ini` — arquivo de configuração lido pelo script de monitores.
+	- `monitoresconfig.bash` — script para aplicar configurações de monitores Acer e Samsung que utilizo (resolução, disposição, múltiplos monitores, etc.).
+	- `monitorinicializacao.ini` — arquivo de configuração para inicialização do sistema para o script dos monitores.
 - `MouseConfig/`
-	- `mouseattacksharkx11.bash` — script para configurar opções do mouse (sensibilidade, aceleração, mapeamento de botões) em X11.
-	- `mouseinicializacao.ini` — arquivo de configuração lido pelo script do mouse.
+	- `mouseattacksharkx11.bash` — script para configurar opções do mouse Attack Shark x11 (sensibilidade, aceleração, mapeamento de botões).
+	- `mouseinicializacao.ini` — arquivo de configuração para inicialização do sistema para meu mouse.
 
 ## Pré-requisitos
 
-- Sistema operacional: Linux (X11) — alguns scripts usam `xrandr` e `xinput`.
+- Sistema operacional: Qualquer distruição Linux (Utilizei o ubuntu 24.0) — alguns scripts usam `xrandr` e `xinput`.
 - Shell: `bash`.
 - Utilitários: `xrandr`, `xinput` (instale via gerenciador de pacotes da sua distro).
 
@@ -66,21 +66,4 @@ bash /caminho/para/o/repositorio/MouseConfig/mouseattacksharkx11.bash &
 - Sempre revise os scripts antes de executá-los, especialmente quando exigem `sudo`.
 - Faça backup das configurações atuais do sistema (por exemplo, configurações de X) caso precise restaurar.
 
-## Contribuições
 
-Pull requests são bem-vindos. Para contribuir:
-
-1. Fork este repositório.
-2. Crie uma branch com sua alteração.
-3. Envie um pull request descrevendo a mudança.
-
-## Licença
-
-Adicione aqui a licença desejada (por exemplo, MIT) ou mantenha como uso pessoal.
-
----
-
-Se quiser, eu posso também:
-
-- Gerar um arquivo `LICENSE` com a licença MIT.
-- Adicionar exemplos mais detalhados no `MonitoresConfig/monitoresconfig.bash` e documentar opções de `monitorinicializacao.ini`.
